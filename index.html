@@ -30,8 +30,8 @@
 			<div class="hero" data-bg-image="images/banner.png">
 				<div class="container">
 					<form action="#" class="find-location">
-						<input type="text" placeholder="Find your location...">
-						<input type="submit" value="Find">
+						<input id="inputx" type="text" placeholder="Find your location...">
+						<input onclick="Submit()" type="submit" value="Find">
 					</form>
 
 				</div>
@@ -45,18 +45,31 @@
 								<div class="date">23 Jan</div>
 							</div> <!-- .forecast-header -->
 							<div class="forecast-content">
-								<div class="location">Dago</div>
+								<div id="outputy" class="location">Dago</div>
+								<script> 
+								function Submit(){
+									var x= document.getElementById("inputx").value;
+									document.getElementById("outputy").innerHTML=x;
+									if (x=="ITB"){
+										document.getElementById("suhu").innerHTML="22<sup>o</sup>C";
+										document.getElementById("angin").innerHTML="19%";
+									}
+									if (x=="block71"){
+										document.getElementById("suhu").innerHTML="22.6<sup>o</sup>C";
+										document.getElementById("angin").innerHTML="21%";
+									}
+								}					
+								</script>
 								<div class="degree">
-									<div class="num">23<sup>o</sup>C</div>
+									<div id="suhu" class="num">23<sup>o</sup>C</div>
 									<div class="forecast-icon">
 										<img src="images/icons/icon-1.svg" alt="" width=90>
 									</div>	
 								</div>
-								<span><img src="images/icon-umberella.png" alt="">20%</span>
-								<span><img src="images/icon-wind.png" alt="">18km/h</span>
-								<span><img src="images/icon-compass.png" alt="">East</span>
+								<span id="angin"><img src="images/icon-umberella.png" alt="">20%</span>
+								<span><img src="images/icon-compass.png" alt="">Macet</span>
 								<div style="color: aliceblue">
-									Jangan lupa memakai Sunblock dan memakai kacamata hitam.
+									Sedia payung jika nanti hujan! Jika tidak, berarti ya tidak hujan hehe.
 								</div> 
 							</div>
 						</div>

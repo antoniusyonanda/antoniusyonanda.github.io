@@ -1,4 +1,5 @@
-(function($, document, window){
+
+function($, document, window){
 	
 	$(document).ready(function(){
 
