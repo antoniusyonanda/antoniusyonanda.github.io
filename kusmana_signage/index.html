@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					Dago, Bandung, Indonesia.<br>
+					Kondisi Cuaca: Berawan<br>
+					Suhu: 22.6<sup>o</sup><br>
+
+				</section>
+				
+				<section> 
+						Sedia <b>payung</b>, <b>jas hujan</b>, <b>sandal jepit</b>, <b>pakaian ganti</b> sebelum hujan.<br>
+						Hindari jalanan <b>macet</b>.<br>
+						Berkendara dalam kondisi <b>stabil</b>.
+				</section>
+				<section> 
+					Kondisi jalan ke depan.
+					<iframe style="border: 20px white" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d4744.542945744247!2d107.6029009480659!3d-6.894624022677806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x2e68e6f60de591c1%3A0x111faa8f96b00a3c!2sJl.+Cihampelas+No.294%2C+Cipaganti%2C+Coblong%2C+Kota+Bandung%2C+Jawa+Barat+40131!3m2!1d-6.886291399999999!2d107.60444659999999!4m3!3m2!1d-6.8996908!2d107.60413849999999!5e0!3m2!1sid!2sid!4v1548229733793" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				],
+				loop:true,
+				
+			});
+			Reveal.configure({
+			autoSlide: 5000
+			});
+		</script>
+	</body>
+</html>
